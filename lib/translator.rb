@@ -1,9 +1,9 @@
 # require modules here
 require 'pry'
-require 'yml'
+require 'YAML'
 
 def load_library(file_path)
-  # code goes here	  library = YAML.load_file(file_path)
+  	  library = YAML.load_file(file_path)
   result = {"get_meaning" => {}, "get_emoticon" => {}}
   library.each do |meaning, emoticons|
     
